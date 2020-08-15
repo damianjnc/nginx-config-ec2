@@ -1,7 +1,13 @@
 Nginx Configuration
+sudo apt-get install nodejs
+sudo apt-get install nginx 
+sudo apt-get install nginx
+sudo service nginx start
+write config and restart sudo service nginx restart
+sudo service nginx status
 
 /etc/nginx/nginx.conf 
-
+````
 user ubuntu;
 worker_processes  1;
 
@@ -38,10 +44,10 @@ http {
 
     include /etc/nginx/conf.d/*.conf;
 }
-
+````
 
 /etc/nginx/conf.d/default.conf
-
+````
 server {
     #listen       80;
     listen 80 default_server;
@@ -72,3 +78,4 @@ server {
     }
 
 }
+````
