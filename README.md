@@ -1,5 +1,3 @@
-# nginx-config-ec2
-
 Nginx Configuration
 
 /etc/nginx/nginx.conf 
